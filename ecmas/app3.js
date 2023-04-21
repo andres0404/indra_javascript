@@ -60,3 +60,14 @@ const respuesta = [
 for({codigo:statuss,id_panorama,data:{persona:{nombre}},data:{persona:{direccion:{pais:country}}}} of respuesta){
     console.log(`${statuss} ${id_panorama} ${nombre} ${country}`);
 }
+
+const dtf = {
+    get ubicacion (){
+        return this._paila;
+    },
+    set ubicacion(valor) {
+        this._paila = valor
+    }
+}
+dtf.ubicacion = 'Bogota, Colombia';
+console.log(dtf.ubicacion);
