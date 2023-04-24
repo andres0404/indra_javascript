@@ -88,5 +88,11 @@ async function getUsuariosAW() {
     console.log(usuario);
     const permisos = await getPermisos(usuario)
     console.log(permisos);
+    return usuario;
 }
-getUsuariosAW();
+
+// getUsuariosAW().then(id => console.log(id));
+
+const usu = getUsuariosAW();
+console.log(usu);
+usu.then(id => console.log(id));
